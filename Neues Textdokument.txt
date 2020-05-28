@@ -1,1 +1,32 @@
-test
+Man kann keine Leeren Repositories hochladen..
+
+Hier ein gutes Tutorial: https://www.youtube.com/watch?v=Lk6jCVAS3Iw
+(Man braucht vielleicht irgendwo nochmal einen ssh Key anzulegen..:
+	$ cd ~/
+	$ mkdir .ssh
+	$ cd .ssh
+	$ ssh-keygen.exe
+	$ cat id_rsa.pub
+	-> Da steht jetzt der ssh Key für github)
+
+
+Um ein Repository lokal zu erstellen gib das folgende ein:
+	$ git config --global user.name "Erik PC/Macbook"
+	$ git config --global user.email "alerik8@yahoo.de"
+	$ git config --global push.default matching
+	$ git config --global alias.co checkout
+	$ git init
+
+Zum hinzufügen von allen Datein im Verzeichniss zum Repository:
+	$ git add .
+	$ git commit -am "Commit Message"
+
+Zum uploaden:
+	$ git remote add origin https://github.com/Erbond12/"Repo.-Name"
+	$ git push -u origin master
+
+
+Für änderungen:
+	$ git add .
+	$ git commit -am "Commit Message"
+	$ git push
