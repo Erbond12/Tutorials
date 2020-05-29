@@ -32,3 +32,4 @@ Für änderungen:
 	$ git add .
 	$ git commit -am "Commit Message"
 	$ git push
+
